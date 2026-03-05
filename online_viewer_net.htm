@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoraggio UNI 2026 - Roadmap Sicurezza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .ics-card { 
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: white;
+            border-radius: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e5e7eb;
+        }
+        .ics-card:hover { 
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        .quarter-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.85rem 1.25rem;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .quarter-row:last-child { border-bottom: none; }
+        
+        .btn-view {
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 0.5rem 0.9rem;
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+            letter-spacing: 0.025em;
+        }
+
+        /* Palette Colori basata sui dati forniti */
+        .bg-fucsia { background-color: #ff77ff; }
+        .bg-giallo { background-color: #ffff00; }
+        .bg-arancione { background-color: #ffa500; }
+        .bg-rosa { background-color: #ff9999; }
+        .bg-azzurro { background-color: #cceeff; }
+        .bg-bianco { background-color: #ffffff; }
+
+        .header-gradient {
+            background: linear-gradient(90deg, #1e3a8a 0%, #1e40af 100%);
+        }
+    </style>
+</head>
+<body class="bg-[#fcfcfd] p-4 md:p-12">
+
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="flex flex-col lg:flex-row items-center justify-between mb-16 bg-white p-10 rounded-3xl shadow-xl border border-slate-100 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full header-gradient"></div>
+            
+            <div class="flex items-center gap-10">
+                <div class="relative w-32 h-32 flex items-center justify-center shrink-0">
+                    <div class="absolute inset-0 bg-white rounded-full border-4 border-double border-blue-900 shadow-lg"></div>
+                    <div class="relative z-10 text-center">
+                        <i class="fas fa-shield-alt text-blue-900 text-xs mb-1"></i>
+                        <p class="text-[11px] font-black text-blue-800 leading-none uppercase">INAIL<br>UNI</p>
+                        <div class="h-[2px] bg-blue-100 w-10 mx-auto my-1.5"></div>
+                        <p class="text-[9px] font-bold text-slate-400 uppercase tracking-tighter">Certified 2026</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h1 class="text-4xl font-black text-slate-900 leading-tight">
+                        Monitoraggio UNI 2026:<br>
+                        <span class="text-blue-600">Roadmap Trimestrale delle 65 Norme Sicurezza</span>
+                    </h1>
+                    <p class="text-slate-500 mt-4 text-lg max-w-2xl font-light">
+                        Il punto di riferimento ufficiale per l'aggiornamento normativo in linea con il Protocollo d'Intesa sulla sicurezza nei luoghi di lavoro.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="ics-card">
+                <div class="p-6 bg-fucsia text-white rounded-t-[1.25rem]">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-black uppercase">Protezione in Generale</h2>
+                        <i class="fas fa-user-shield opacity-50"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="quarter-row"><span>I Trim</span> <a href="#" class="btn-view bg-fucsia text-white hover:opacity-80 shadow-sm">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>II Trim</span> <a href="#" class="btn-view bg-fucsia text-white hover:opacity-80 shadow-sm">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>III Trim</span> <a href="#" class="btn-view bg-fucsia text-white hover:opacity-80 shadow-sm">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>IV Trim</span> <a href="#" class="btn-view bg-fucsia text-white hover:opacity-80 shadow-sm">Vedi Norme</a></div>
+                </div>
+            </div>
+
+            <div class="ics-card">
+                <div class="p-6 bg-giallo text-slate-800 rounded-t-[1.25rem]">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-black uppercase">Macchinari</h2>
+                        <i class="fas fa-cogs opacity-50"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="quarter-row"><span>I Trim</span> <a href="#" class="btn-view bg-yellow-400 text-slate-800 hover:bg-yellow-500">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>II Trim</span> <a href="#" class="btn-view bg-yellow-400 text-slate-800 hover:bg-yellow-500">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>III Trim</span> <a href="#" class="btn-view bg-yellow-400 text-slate-800 hover:bg-yellow-500">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>IV Trim</span> <a href="#" class="btn-view bg-yellow-400 text-slate-800 hover:bg-yellow-500">Vedi Norme</a></div>
+                </div>
+            </div>
+
+            <div class="ics-card">
+                <div class="p-6 bg-arancione text-white rounded-t-[1.25rem]">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-black uppercase">Impianti</h2>
+                        <i class="fas fa-bolt opacity-50"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="quarter-row"><span>I Trim</span> <a href="#" class="btn-view bg-orange-500 text-white hover:bg-orange-600">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>II Trim</span> <a href="#" class="btn-view bg-orange-500 text-white hover:bg-orange-600">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>III Trim</span> <a href="#" class="btn-view bg-orange-500 text-white hover:bg-orange-600">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>IV Trim</span> <a href="#" class="btn-view bg-orange-500 text-white hover:bg-orange-600">Vedi Norme</a></div>
+                </div>
+            </div>
+
+            <div class="ics-card">
+                <div class="p-6 bg-rosa text-white rounded-t-[1.25rem]">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-black uppercase">Attrezzature</h2>
+                        <i class="fas fa-tools opacity-50"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="quarter-row"><span>I Trim</span> <a href="#" class="btn-view bg-pink-400 text-white hover:bg-pink-500">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>II Trim</span> <a href="#" class="btn-view bg-pink-400 text-white hover:bg-pink-500">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>III Trim</span> <a href="#" class="btn-view bg-pink-400 text-white hover:bg-pink-500">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>IV Trim</span> <a href="#" class="btn-view bg-pink-400 text-white hover:bg-pink-500">Vedi Norme</a></div>
+                </div>
+            </div>
+
+            <div class="ics-card">
+                <div class="p-6 bg-azzurro text-blue-900 rounded-t-[1.25rem] border-b border-blue-100">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-black uppercase text-[11px]">Dispositivi Protezione Ind.</h2>
+                        <i class="fas fa-hard-hat opacity-50"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="quarter-row"><span>I Trim</span> <a href="#" class="btn-view bg-blue-500 text-white hover:bg-blue-600">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>II Trim</span> <a href="#" class="btn-view bg-blue-500 text-white hover:bg-blue-600">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>III Trim</span> <a href="#" class="btn-view bg-blue-500 text-white hover:bg-blue-600">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>IV Trim</span> <a href="#" class="btn-view bg-blue-500 text-white hover:bg-blue-600">Vedi Norme</a></div>
+                </div>
+            </div>
+
+            <div class="ics-card">
+                <div class="p-6 bg-white text-slate-400 border-b border-slate-100 rounded-t-[1.25rem]">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-sm font-black uppercase">Altro</h2>
+                        <i class="fas fa-ellipsis-h opacity-50"></i>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="quarter-row"><span>I Trim</span> <a href="#" class="btn-view bg-slate-800 text-white hover:bg-black">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>II Trim</span> <a href="#" class="btn-view bg-slate-800 text-white hover:bg-black">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>III Trim</span> <a href="#" class="btn-view bg-slate-800 text-white hover:bg-black">Vedi Norme</a></div>
+                    <div class="quarter-row"><span>IV Trim</span> <a href="#" class="btn-view bg-slate-800 text-white hover:bg-black">Vedi Norme</a></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-20 flex flex-col items-center">
+            <div class="w-24 h-1 bg-blue-600 rounded-full mb-8"></div>
+            <p class="text-[10px] text-slate-400 font-black uppercase tracking-[0.3em] text-center">
+                Protocollo Operativo Sicurezza UNI-INAIL © 2026 | Conformità ISO 9001
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
